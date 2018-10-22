@@ -1,0 +1,18 @@
+require(['jquery','ajax','public','login'],function($,ajax,public,login){
+	login.init({
+		quicklogin:".quicklogin",
+		mymatou:".mymatou",
+		btn1:'.btn1',
+		btn2:'.btn2',
+		txt:'.txt',
+		pass:'.pass',
+		txt2:'.txt2',
+		pass2:'.pass2',
+		ts1:'.ts1',
+		ts2:'.ts2',
+		mianfei:'.mianfei',
+		zhanghu:'.zhanghu',
+		dl:'.dl',
+		d2:'.d2'
+	})
+})

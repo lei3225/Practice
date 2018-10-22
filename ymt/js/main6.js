@@ -1,0 +1,27 @@
+require(['jquery','ajax','jquery.cookie','index','goods','index1','floor','person'],function($,ajax,cookie,index,goods,index1,floor,person){
+	index.init({
+		ej:'.ej',
+		dj:'.dj',
+		xb:'.xb',
+	})
+	goods.init({
+		xiala:".xiala",
+		search2:".search2",
+		label:'.label',
+		nr:".nr",
+	})
+	index1.init({
+		product:'.product',
+		go:'.go',
+	})
+	floor.init({
+		f1:".f1",
+		f2:".f2",
+		floor:'#floor',
+		html:'html',
+	})
+	person.init({
+		sideItems:".side-items",
+		p1:'.p1',
+	})
+})

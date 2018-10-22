@@ -1,0 +1,675 @@
+*{
+	margin:0;
+	padding:0;
+}
+.margin{
+	width:1200px;
+	margin:0 auto;
+}
+li{
+	list-style:none;
+}
+body{
+	font:normal 12px/1.5 "";
+}
+a{
+	color:#646464;
+	text-decoration:none;
+	font:normal 12px/1.5 "";
+}
+a:hover{
+	color:#c33;
+}
+.active{
+	display:block;
+}
+.icon{
+	display:inline-block;
+	width:24px;
+	height:24px;
+	vertical-align:middle;
+}
+/*顶部开始*/
+#top{
+		background-color:#f8f8f8;
+}
+.top{
+	height:30px;
+	font:12px/30px "" ;
+	color:#646464;
+}
+.top:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+.top-l{
+	float:left;
+}
+.top-l span:nth-child(2){
+	margin-left:30px;
+}
+.top-r{
+	float:right;
+}
+.top-r li{
+	float:left;
+}
+.top-r li a{
+	display:block;
+	padding:0 10px;
+}
+a:hover{
+	color:#cc3333;
+}
+/*顶部结束*/
+
+/*头部开始*/
+#header{
+	margin:15px 0;
+}
+.header{
+	height:150px;
+}
+.header:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+h1.logo{
+	margin-top:17.5px;
+	float:left;
+}
+h1.logo a{
+	display:block;
+	width:309px;
+	height:63px;
+	background:url(//s2.ymatou.com/home/4aa0780b5ffeee46a01f132052fdb71a.png);
+}
+.header-m{
+	float:left;
+	margin:37.5px 0 0 63px;
+	width:450px;
+	height:40px;
+	background-color:#c33;
+	box-shadow:0 1px 2px #b8b3b3;
+	position:relative;
+	position:relative;
+}
+
+.header-m .search{
+	float:left;
+	width:370px;
+	height:22px;
+	padding:7px 10px;
+	border:none;
+	background:#fff;
+	margin:2px;
+	font:16px/22px "";
+	color:#e5e5e5;
+}
+.header-m ul{
+	display:none;
+	position:absolute;
+	top:40px;
+	width:370px;
+	padding:7px 10px;
+	min-height:210px;
+	border-left:1px solid #dedede;
+	border-right:1px solid #dedede;
+	border-bottom:1px solid #dedede;
+	background:#fff;
+	z-index:999;
+}
+.header-m ul.ts2 li{
+	font-size:12px;
+	display:flex;
+	flex-direction:column;
+	margin-right:20px;
+	font:12px/26px "";
+	color:#666;
+}
+.header-m ul.ts li{
+	font-size:12px;
+	float:left;
+	margin-right:20px;
+	font:12px/26px "";
+	color:#666;
+}
+.header ul.ts li:nth-child(1){
+	color:#dedede;
+	margin-right:300px;
+}
+.header-m .btn{
+	overflow:hidden;
+	float:right;
+	background:none;
+	border:none;
+	position:absolute;
+	right:0;
+	height:40px;
+	width:60px;	
+	background: url(//s2.ymatou.com/home/4f17885f394dcd87bf2232af21239291.png) no-repeat -12px 10px;
+	
+}
+.header-r{
+	float:right;
+	width:167.1px;
+	height:150px;
+	background: url(//s2.ymatou.com/home/e99aa3f029f2ae1173fabf6e9edf6c8a.png);
+}
+/*头部结束*/
+
+/*nav开始*/
+#nav{
+		border-bottom:2px solid #bf4f4f;
+}
+.nav{
+	height:50px;
+	text-align:center;
+	position:relative;
+	display:flex;
+	justify-content:center;
+}
+.nav>a{
+	font:20px/50px "";
+	color:#383838;
+	font-weight:700;
+	padding:0 35px;
+	height:100%;
+}
+.nav>a.dj{
+	position:relative;
+}
+.nav>a>i{
+	background: url(//s2.ymatou.com/home/1cb1fe20152e19748e6cc8b52cc8fcbb.png);
+	display:block;
+	width:14px;
+	height:8px;
+	position:absolute;
+	right:0;
+	top:50%;	
+	transform:translate(0,-50%);
+}
+
+.ej{
+	position:absolute;
+	bottom:-241px;
+	/*background:#ff0;*/
+	height:240px;
+	box-sizing:border-box;
+	padding:10px 5px;
+	width:1204px;
+	z-index:99;
+	display:none;
+	background:#fff;
+}
+.active{
+	display:block;
+}
+.nav .ej:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+.ej .lb{
+	width:198px;
+	height:56px;
+	float:left;
+	padding: 9px 20px;
+	border-bottom:1px dotted #dedede;
+	border-right:1px dotted #dedede;
+}
+.ej .lb:nth-child(5),.ej .lb:nth-child(15),.ej .lb:nth-child(10){
+	border-right:none;
+}
+
+.ej .lb:nth-child(11),.ej .lb:nth-child(15),.ej .lb:nth-child(12),.ej .lb:nth-child(13),.ej .lb:nth-child(14){
+	border-bottom:none;
+}
+.ej .lb:last-child a{
+	text-align:center;
+}
+.lb a{
+	display:block;
+	font-size:12px;
+	font-weight:700
+	width:100%;
+	height:100%;
+	position:relative;
+	text-align:left;
+}
+.lb a h3{	
+	font-size:18px;
+}
+.lb a h3 em{
+	display:inline-block;
+	background: url(//s2.ymatou.com/home/4f17885f394dcd87bf2232af21239291.png);
+	background-position:-5px -5px;
+	width:7px;
+	height:12px;
+	margin-left:5px;
+}
+.lb a div.xz{
+	width:138px;
+}
+.lb a span.tp{
+	width:55px;
+	height:55px;
+	position:absolute;
+	top:0px;
+	right:15px;
+	
+}
+.lb a span.tp img{
+	display:block;
+	width:55px;
+	height:55px;
+}
+/*nav结束*/
+/*内容开始*/
+.crumb{
+	margin-top:10px;
+	font-size:14px;
+	display:flex;
+	align-items: center;
+
+}
+.crumb>a{
+	color:#383838;
+}
+.crumb>a:hover{
+	color:#c33;
+}
+.crumb>i{
+	color:#666;
+	padding:0 10px;	
+}
+.crumb>span{
+	color:#9b9b9b;
+	font-size:14px;
+}
+.pdw-hd{
+	padding:30px 20px 0;
+	position:relative;
+	height:635px;
+}
+/*放大镜开始*/
+#box1{
+	width:425px;
+	height:363px;
+	position:relative;
+	left:50px;
+	top:50px;
+}
+#box1 img{
+	width:425px;
+	height:363px;
+}
+img{
+	display:block;
+}
+#box2{
+	width:425px;
+	height:363px;
+	margin-left:100px;
+	margin-top:50px;
+	display:none;
+	position:absolute;
+	right:200px;
+	top:20px;
+	overflow:hidden;
+	z-index:99;
+}
+#box2>img{
+	width:1000px;
+	height:854px;
+	position:absolute;
+}
+#box1>span{
+	position:absolute;
+	width:180px;
+	height:154px;
+	background:url("http://pic1.ymatou.com/G02/shangou/M04/DD/FC/CgvUBVqQ3P2AeE_RAATieY_ZpKs375_80_107_n_w_o.jpg") no-repeat;
+	/*background:rgba(200,200,200,0.7);*/
+	background-size:425px 363px;
+	top:0;
+	left:0;	
+	display:none;
+}
+#box1>b{
+	width:425px;
+	height:363px;
+	position:absolute;
+	top:0;
+	left:0;	
+	
+}
+#box3{
+	position:absolute;
+	top:500px;
+	left:50px;
+	width:437px;
+	height:92px;
+	overflow:hidden;
+}
+#box3>ul{
+	width:1000px;
+	position:absolute;
+	margin:0 10px;
+}
+#box3>ul:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+#box3 li{
+	list-style:none;
+	float:left;
+	width:80px;
+	height:80px;
+	margin-left:10px;
+	padding:5px;
+	border: 1px solid #f1f1f1;
+}
+#box3 li.bk{
+	border:1px solid #c33;
+}
+#box3 li img{
+	width:80px;
+	height:80px;
+}
+[type="button"]{
+	width:16px;
+	height:92px;
+	position:absolute;top:0;
+	background:#f1f1f1;
+	border:none;
+}
+#box3 input:nth-of-type(1){
+	
+	right:0px;
+}
+#box3 input:nth-of-type(2){
+	left:0px;
+}
+
+/*放大镜结束*/
+
+
+/*内容结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*底部开始/*/
+.footer{
+	margin-top:70px;
+}
+.footer-t{
+	padding:10px 0;
+	height:60px;
+	background:url(//s2.ymatou.com/top/0a294aaaf59d9e638d0112191d8416a0.png) repeat-x #c33;
+	display:flex;
+	justify-content: center;
+}
+.footer-t a{
+	color:#fff;	
+	margin-right:74px;
+}
+.footer-t a i{
+	background:url(../images/footer.png) no-repeat 0 0;
+	width:50px;
+	height:62px;
+	margin-right:10px;
+}
+.footer-t a:nth-child(2) i{
+	background:url(../images/footer.png) no-repeat -190px 0;
+}
+.footer-t a:nth-child(3) i{
+	background:url(../images/footer.png) no-repeat -382px 0;
+}
+.footer-t a:nth-child(4) i{
+	background:url(../images/footer.png) no-repeat -569px 0;
+}
+.footer-t a:hover{
+	color:#fff;
+}
+.footer-t a:last-child{
+	width:70px;
+	height:20px;
+	border:1px solid #fff;
+	border-radius:8px;
+	font:12px/20px "";
+	text-align:center;
+	vertical-align:middle;
+	margin-top:20px;
+	padding:0 3px;
+}
+.bottom-list{
+	width:880px;
+	margin:10px auto 15px;
+	overflow:hidden;
+}
+.bottom-list>ul{
+	float:left;
+	width:190px;
+	font-size:12px;
+}
+.bottom-list>ul>li{
+	padding:3px 0;
+}
+.bottom-list>ul>li>a{
+	color:#999;
+}
+.bottom-list>ul>li>a:hover{
+	color:#0062CC;
+}
+.bottom-list>ul>li.dl{
+	font: 700 14px/26px "";
+}
+.bottom-list .last{
+	float:left;
+	width:90px;
+	
+}
+.bottom-list .last>p:nth-child(1){
+	font:700 14px/26px "";
+}
+.bottom-list .last img{
+	display:block;
+	width:90px;
+	height:90px;
+}
+.bottom-list .last .wb{
+	margin-top:5px;
+	border:1px solid #ddd;
+	display:flex;
+	justify-content:center;
+}
+.bottom-list .last .wb a{
+	font-size:14px;
+	vertical-align:middle;
+	margin-left:3px;
+}
+.bottom-list .last .wb a i{
+	width:22px;
+	height:20px;
+	background:url(//s2.ymatou.com/top/72a5091d32f30abda3bc6775d7d0c207.png) no-repeat -26px -131px;
+	vertical-align:middle;
+}
+.intro{
+	text-align:center;
+	padding:10px 0;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	display:flex;
+	justify-content:center;
+}
+.intro a{
+	border-right:1px solid #ddd;
+	font:700 12px/1.5 "";
+	color:#868686;
+	padding:0 10px;
+}
+.matou-link{
+	padding:10px 0;
+	display:flex;
+	justify-content: center;
+	flex-wrap:wrap;
+}
+.matou-link li{
+	border-right:1px solid #ccc;
+	font:12px/18px ""; 
+	padding:0 8px;
+	margin:5px 0;
+}
+.matou-link li a{
+	display:block;
+	color:#bbb;
+}
+.friend-link{
+	width:760px;
+	margin:10px auto;
+	height:50px;
+	text-align:center;
+	display:flex;
+	justify-content: center;
+}
+.friend-link a{
+	width:128px;
+	height:50px;
+}
+.friend-link a i{
+	width:128px;
+	height:50px;
+	background:url(//s2.ymatou.com/top/08f215631bb50c5af9ab0f8b8ab3ae29.png) no-repeat -5px -2px;
+}
+.friend-link a:nth-child(2){
+	width:156px;
+}
+.friend-link a:nth-child(2) i{
+	background-position: -136px -2px;
+}
+.friend-link a:nth-child(3){
+	width:102px;
+}
+.friend-link a:nth-child(3) i{
+	background-position: -296px -2px;
+}
+.friend-link a:nth-child(4){
+	width:153px;
+}
+.friend-link a:nth-child(4) i{
+	background-position: -404px -2px;
+}
+.friend-link a:nth-child(5){
+	width:150px;
+}
+.friend-link a:nth-child(5) i{
+	background: url(//s2.ymatou.com/top/bb1dd1922832d86b6da3e288199c9bab.png) no-repeat;
+}
+.copywrite P{
+	color:#bbb;
+	font-size:12px;
+	text-align:center;
+}
+.copywrite P:nth-child(2){
+	color:#666;
+	color:12px;
+}
+.friendlink2{
+	width:268px;
+	height:100px;
+	margin:0 auto;
+	display:flex;
+	justify-content: center;
+}
+
+.friendlink2 a:nth-child(1){
+	width:47px;
+	height:47px;
+	background:url(//s2.ymatou.com/top/08f215631bb50c5af9ab0f8b8ab3ae29.png) no-repeat -562px -2px;
+	
+}
+.friendlink2 a:nth-child(2){
+	margin:25px 0 0 10px;
+}
+.friendlink2 a:nth-child(2):after{
+	display:block;
+	content:'';
+	clear:both;
+}
+.friendlink2 a:nth-child(2) i{
+	width:20px;
+	height:20px;
+	background:url(//s2.ymatou.com/top/d0289dc0a46fc5b15b3363ffa78cf6c7.png) no-repeat;
+	float:left;
+	vertical-align:middle;
+}
+.friendlink2 a:nth-child(2) span{
+	float:left;
+	color:#939393;
+	margin:0 0 0 5px;
+	font:12px/20px "";
+}
+/*底部结束*/
+
+/*楼层开始*/
+#floor{
+	width:35px;
+	position:fixed;
+	top:0;
+	right:0;
+	background:#383838;
+	
+}
+#floor ul li{
+	color:#fff;
+	font-size:12px;
+	padding:10px 0;
+	text-align:center;
+	cursor:pointer;
+	border-top: 1px solid #979797;
+	color:#979797;
+}
+#floor ul li:nth-child(1) i{
+	width:17px;
+	height:17px;
+	background: url(//s2.ymatou.com/top/bd2ccc535c6ae0f5a0aeb824b98a208f.png) no-repeat -102px 0px;
+}
+#floor .shop{
+	padding:18px 7px 7px;
+	
+}
+#floor .shop a{
+	display:block;
+	color:#fff;
+}
+#floor .shop a i{
+	width:17px;
+	height:17px;
+	background:url(//s2.ymatou.com/top/bd2ccc535c6ae0f5a0aeb824b98a208f.png) no-repeat  -17px 0;
+	padding:3px 0;
+}
+/*楼层结束*/

@@ -1,0 +1,501 @@
+/*公共样式*/
+*{
+	margin:0;
+	padding:0;
+}
+.margin{
+	width:1200px;
+	margin:0 auto;
+}
+li{
+	list-style:none;
+}
+a{
+	color:#646464;
+	text-decoration:none;
+	font:normal 12px/1.5 "";
+}
+.active{
+	display:block;
+}
+.icon{
+	display:inline-block;
+	width:24px;
+	height:24px;
+	vertical-align:middle;
+}
+/*顶部开始*/
+#top{
+		background-color:#f8f8f8;
+}
+.top{
+	height:30px;
+	font:12px/30px "" ;
+	color:#646464;
+}
+.top:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+.top-l{
+	float:left;
+}
+.top-l span:nth-child(2){
+	margin-left:30px;
+}
+.top-r{
+	float:right;
+}
+.top-r li{
+	float:left;
+}
+.top-r li a{
+	display:block;
+	padding:0 10px;
+}
+.con a:hover{
+	color:#cc3333;
+}
+/*顶部结束*/
+/*主体开始*/
+#mainer{
+	overflow:hidden;
+}
+.side{
+	text-align:left;
+	width:180px;
+	float:left;
+	background:#f8f8f8;
+	padding:0 0 10px;
+	margin-top:30px;
+	margin-right:20px;
+	overflow:hidden;
+}
+
+.user{
+	height:36px;
+	line-height:36px;
+	color:#fff;
+	width:148px;
+	padding-left:32px; 	
+	font-size:16px;
+	background:#c33 url(//s2.ymatou.com/my/0116b34e74c173deabcbdaadf8cafbf4.png) no-repeat 10px 50%;
+	display:block;
+}
+.side-items{
+	margin-top:8px;
+}
+.side-items h3{
+	font-size:14px;
+	color:#666;
+	padding-left:11px;
+}
+.side-items h3 i{
+	width:13px;
+	height:13px;
+	background: url(//s2.ymatou.com/my/fff5a68f206e5aa183de27757db088ca.png) no-repeat;
+	margin-right:5px;
+}
+.side-items p a{
+	padding-left:29px;
+	height:32px;
+	line-height:32px;
+	display:block;
+}
+.side-items p a:hover{
+	color:#fff;
+	background:#c33;
+}
+.side-bd div:nth(2) i{
+	background:url(//s2.ymatou.com/my/ce84787b26b7449fc13303ab9484355f.png) no-repeat;
+}
+.side-bd div:nth(3) i{
+	background: url(//s2.ymatou.com/my/b679e3e68f683007e3f1e17590977f2b.png) no-repeat;
+}
+.con{
+	width:1000px;
+	float:left;
+	margin-top:30px;
+	overflow:hidden;
+}
+.base-info{
+	background:#f7f7f7;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+.info-t{
+	height:60px;
+	display:flex;
+}
+.info-t div.img{
+	width:40px;
+	height:40px;
+	border-radius:100px;
+	margin:10px;
+}
+.info-t div.img img{
+	width:100%;
+}
+.info-t div.txt:nth-child(1){
+	margin-top:10px;
+}
+.info-t .txt{
+	font-size:14px;
+	color:#383838;
+	display:flex;
+	align-items:center;
+
+}
+.info-t .txt>i{
+	margin:0 5px;
+	height:12px;
+	width:1px;
+	background:#dedede;	
+
+}
+.txt2 p i{
+	width:14px;
+	height:14px;
+	background: url(//s2.ymatou.com/my/944e42827bc08de0bd43c4feb2ba5dee.png) no-repeat 0 0;
+	margin:0 3px;
+}
+.txt2 p i:nth-child(2){
+	background: url(//s2.ymatou.com/my/58090057ab115f03d1a79b155eafb254.png) no-repeat 0 0;
+}
+.txt2 p i:nth-child(3){
+	background: url(//s2.ymatou.com/my/58cdde42db639b9435c3fa1ef88dbbda.png) no-repeat 0 0;
+}
+.txt a{
+	font-size:12px;
+	color:#666;
+	margin-left:50px;
+}
+.info-b{
+	height:25px;
+	background:#f2f2f2;
+	padding-top:9px;
+	display:flex;
+}
+.info-b div{
+	width:199px;
+	height:16px;
+	border-right:1px solid #d8d8d8;
+	color:#9b9b9b;
+	text-align:center;
+	line-height:16px;
+	font-size:14px;
+
+}
+.info-b div span{
+	background:#f28f25;
+	border-radius:100px;
+	font-size:12px;
+	line-height:12px;
+	color:#fff;
+	padding:0 5px;
+	margin-left:3px;
+}
+.con .con-t>i{
+	background: url(//s2.ymatou.com/home/ff6e07b382c6b974faa5b4cee2f0c49b.png) no-repeat -168px -30px;
+	vertical-align:middle;
+	margin-left:8px;
+}
+.con .con-t>span{
+	font-size:20px;
+	color:#383838;
+	font-weight:700;
+	margin-left:8px;
+	vertical-align:middle;
+}
+.con-b{
+	margin-top:10px;
+	
+}
+.con li{
+	float:left;
+	width:212px;
+	padding:9px;
+	border:1px solid #dedede;
+	font-size:14px;
+	margin-left:8px;
+	margin-top:8px;
+}
+.con li a{
+	display:block;
+}
+.con li>a>p{
+	font-size:14px;
+	margin-top:8px;
+	height:42px;
+}
+.con li>p{
+	color:#c33;
+	margin-top:10px;
+	font-weight:700;
+	font-size:18px;
+	
+}
+.con li img{
+	width:212px;
+	height:212px;
+}
+/*主体结束*/
+
+
+
+
+
+
+
+/*底部开始/*/
+.footer{
+	margin-top:70px;
+}
+.footer-t{
+	padding:10px 0;
+	height:60px;
+	background:url(//s2.ymatou.com/top/0a294aaaf59d9e638d0112191d8416a0.png) repeat-x #c33;
+	display:flex;
+	justify-content: center;
+}
+.footer-t a{
+	color:#fff;	
+	margin-right:74px;
+}
+.footer-t a i{
+	background:url(../images/footer.png) no-repeat 0 0;
+	width:50px;
+	height:62px;
+	margin-right:10px;
+}
+.footer-t a:nth-child(2) i{
+	background:url(../images/footer.png) no-repeat -190px 0;
+}
+.footer-t a:nth-child(3) i{
+	background:url(../images/footer.png) no-repeat -382px 0;
+}
+.footer-t a:nth-child(4) i{
+	background:url(../images/footer.png) no-repeat -569px 0;
+}
+.footer-t a:hover{
+	color:#fff;
+}
+.footer-t a:last-child{
+	width:70px;
+	height:20px;
+	border:1px solid #fff;
+	border-radius:8px;
+	font:12px/20px "";
+	text-align:center;
+	vertical-align:middle;
+	margin-top:20px;
+	padding:0 3px;
+}
+.bottom-list{
+	width:880px;
+	margin:10px auto 15px;
+	overflow:hidden;
+}
+.bottom-list>ul{
+	float:left;
+	width:190px;
+	font-size:12px;
+}
+.bottom-list>ul>li{
+	padding:3px 0;
+}
+.bottom-list>ul>li>a{
+	color:#999;
+}
+.bottom-list>ul>li>a:hover{
+	color:#0062CC;
+}
+.bottom-list>ul>li.dl{
+	font: 700 14px/26px "";
+}
+.bottom-list .last{
+	float:left;
+	width:90px;
+	
+}
+.bottom-list .last>p:nth-child(1){
+	font:700 14px/26px "";
+}
+.bottom-list .last img{
+	display:block;
+	width:90px;
+	height:90px;
+}
+.bottom-list .last .wb{
+	margin-top:5px;
+	border:1px solid #ddd;
+	display:flex;
+	justify-content:center;
+}
+.bottom-list .last .wb a{
+	font-size:14px;
+	vertical-align:middle;
+	margin-left:3px;
+}
+.bottom-list .last .wb a i{
+	width:22px;
+	height:20px;
+	background:url(//s2.ymatou.com/top/72a5091d32f30abda3bc6775d7d0c207.png) no-repeat -26px -131px;
+	vertical-align:middle;
+}
+.intro{
+	text-align:center;
+	padding:10px 0;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	display:flex;
+	justify-content:center;
+}
+.intro a{
+	border-right:1px solid #ddd;
+	font:700 12px/1.5 "";
+	color:#868686;
+	padding:0 10px;
+}
+.matou-link{
+	padding:10px 0;
+	display:flex;
+	justify-content: center;
+	flex-wrap:wrap;
+}
+.matou-link li{
+	border-right:1px solid #ccc;
+	font:12px/18px ""; 
+	padding:0 8px;
+	margin:5px 0;
+}
+.matou-link li a{
+	display:block;
+	color:#bbb;
+}
+.friend-link{
+	width:760px;
+	margin:10px auto;
+	height:50px;
+	text-align:center;
+	display:flex;
+	justify-content: center;
+}
+.friend-link a{
+	width:128px;
+	height:50px;
+}
+.friend-link a i{
+	width:128px;
+	height:50px;
+	background:url(//s2.ymatou.com/top/08f215631bb50c5af9ab0f8b8ab3ae29.png) no-repeat -5px -2px;
+}
+.friend-link a:nth-child(2){
+	width:156px;
+}
+.friend-link a:nth-child(2) i{
+	background-position: -136px -2px;
+}
+.friend-link a:nth-child(3){
+	width:102px;
+}
+.friend-link a:nth-child(3) i{
+	background-position: -296px -2px;
+}
+.friend-link a:nth-child(4){
+	width:153px;
+}
+.friend-link a:nth-child(4) i{
+	background-position: -404px -2px;
+}
+.friend-link a:nth-child(5){
+	width:150px;
+}
+.friend-link a:nth-child(5) i{
+	background: url(//s2.ymatou.com/top/bb1dd1922832d86b6da3e288199c9bab.png) no-repeat;
+}
+.copywrite P{
+	color:#bbb;
+	font-size:12px;
+	text-align:center;
+}
+.copywrite P:nth-child(2){
+	color:#666;
+	color:12px;
+}
+.friendlink2{
+	width:268px;
+	height:100px;
+	margin:0 auto;
+	display:flex;
+	justify-content: center;
+}
+
+.friendlink2 a:nth-child(1){
+	width:47px;
+	height:47px;
+	background:url(//s2.ymatou.com/top/08f215631bb50c5af9ab0f8b8ab3ae29.png) no-repeat -562px -2px;
+	
+}
+.friendlink2 a:nth-child(2){
+	margin:25px 0 0 10px;
+}
+.friendlink2 a:nth-child(2):after{
+	display:block;
+	content:'';
+	clear:both;
+}
+.friendlink2 a:nth-child(2) i{
+	width:20px;
+	height:20px;
+	background:url(//s2.ymatou.com/top/d0289dc0a46fc5b15b3363ffa78cf6c7.png) no-repeat;
+	float:left;
+	vertical-align:middle;
+}
+.friendlink2 a:nth-child(2) span{
+	float:left;
+	color:#939393;
+	margin:0 0 0 5px;
+	font:12px/20px "";
+}
+/*底部结束*/
+
+/*楼层开始*/
+#floor{
+	width:35px;
+	position:fixed;
+	top:0;
+	right:0;
+	background:#383838;
+	
+}
+#floor ul li{
+	color:#fff;
+	font-size:12px;
+	padding:10px 0;
+	text-align:center;
+	cursor:pointer;
+	border-top: 1px solid #979797;
+	color:#979797;
+}
+#floor ul li:nth-child(1) i{
+	width:17px;
+	height:17px;
+	background: url(//s2.ymatou.com/top/bd2ccc535c6ae0f5a0aeb824b98a208f.png) no-repeat -102px 0px;
+}
+#floor .shop{
+	padding:18px 7px 7px;
+	
+}
+#floor .shop a{
+	display:block;
+	color:#fff;
+}
+#floor .shop a i{
+	width:17px;
+	height:17px;
+	background:url(//s2.ymatou.com/top/bd2ccc535c6ae0f5a0aeb824b98a208f.png) no-repeat  -17px 0;
+	padding:3px 0;
+}
+/*楼层结束*/
