@@ -1,0 +1,74 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+li{list-style: none;}
+input:focus{outline: none;}
+.margin{width: 980px;margin: 0 auto;}
+html{background: #F2F2F2;}
+
+
+/*头部*/
+header{background: #fff;height: 89px;border-bottom: 1px solid #c5c5c5;}
+header .logo{float: left;margin-top: 20px;}
+header .header-r{float: right;font: 12px/89px "";}
+header .header-r a{display: inline-block;}
+header .header-r i{display:inline-block;width:17px;height:17px;margin-left:20px;}
+/*设置按钮——图片整合*/
+header .header-r .icon-set{background: url("../img/regist/loginIcon.gif") no-repeat -1px -1px;}
+/*设置在线人头*/
+header .header-r .icon-service{background: url("../img/regist/loginIcon.gif") no-repeat -25px -1px;}
+
+
+
+/*主体部分*/
+main{padding-top: 70px;width:980px;height:582px;}
+.imgBox{float: left;margin-left:15px;}
+.imgBox img{display: block;width: 438px;height: 437px;}
+.loginBox{float: right;width: 488px;height: 435px;border: 1px solid #c5c5c5;
+          background: #fff;position: relative;} 
+.login_form{width: 350px;height: 260px;margin: 20px auto;}
+
+.login_tit i{display: inline-block;width: 28px;height: 28px;margin-right: 5px;vertical-align: middle;
+            background: url("../img/login/loginIcon.gif") no-repeat -94px -3px;}
+.login_tit{margin-bottom: 30px;text-align: center;height: 28px;font:12px/28px "";}
+
+/*登录信息*/
+.text_box{width: 348px;height: 52px;line-height: 52px;border:1px solid #c5c5c5;position: relative;}
+.text_box i{display: inline-block;vertical-align: middle;margin-left: 20px;margin-top: -2px;}
+.text_box .user{width: 18px;height: 18px;background: url("../img/login/loginIcon.gif") no-repeat -46px -2px;}
+.text_box input{color: rgb(153, 153, 153);width: 260px;height: 24px;border: none;line-height: 24px;padding-bottom: 3px;
+    			vertical-align: middle;text-indent: 29px;}
+.text_box .pwd{width: 18px;height: 18px;background: url("../img/login/loginIcon.gif") no-repeat -72px -1px;}
+
+.autoLogin{height: 54px;font:12px/54px "";color: #999;}
+.autoLogin .f1{float: left;}
+.autoLogin .fr{float: right;}
+.autoLogin input{vertical-align: middle;margin-left: 3px;}/*自动登录单选框*/
+
+.loginBtn{display: block;width: 348px;height: 42px;font:14px/42px "";text-align: center;color: #fff;cursor: pointer;
+    border: 1px solid #dc0014;background: #fe0a2e;box-shadow: inset 0 0 1px rgba(255,255,255,0.9);}/*登录提交按钮*/
+
+.dashedLine{width: 432px;height: 7px;margin:20px 0 0 30px;background: url("../img/login/dashed_bg.gif");}
+
+.other_login{width: 350px;height: 70px; margin: 10px auto;font-size: 12px;}
+.other_login a{display: inline-block;width: 38px;height: 38px;margin:10px 20px 0 0;}
+.other_login .qq{background: url("../img/login/qq.png");}
+.other_login .zhifubao{background: url("../img/login/zfb.png");}
+.other_login .weixin{background: url("../img/login/weixin.png");border-radius: 38px;}
+
+.resg{display: block;width: 113px; height: 38px;position: absolute;right: -1px;bottom: -38px;font:12px/38px "";
+      text-align: center;color: #fff;background: #ff0421;}/*相对于loginbox的定位*/
+     
+/*蓝色阴影边框对应js中添加的class*/
+.focus{
+    z-index: 3;
+    position: relative;
+    border: 1px solid rgb(102,175,233);
+    box-shadow: 0 0 5px rgba(102,175,233,1);
+}
+
+
+
+/*尾部*/   
+footer{height: 44px;margin-top: 50px;text-align: center;font:14px/22px "";}
+footer a{display: inline-block;margin: 0 10px;text-decoration: none;color: #333;}
+footer a:hover{color: red;}

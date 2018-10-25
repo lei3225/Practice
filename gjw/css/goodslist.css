@@ -1,0 +1,127 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+li{list-style: none;}
+fieldset img{border: 0;}
+html,body{height: 100%;}
+
+
+
+
+/*白酒相关信息*/
+.searchbox {font-size: 12px;width: 1180px;color: rgb(132, 132, 132);background: rgb(255, 255, 255);margin: 0 auto;}
+.searchbox .search-tit{color:#000;height: 40px;width: 100%;line-height: 40px;text-indent: 10px;border-bottom: 1px dashed rgb(212, 212, 212);}
+.searchbox .search-tit em{color: #DD3F45;}
+
+/*已选条件*/
+.searchbox .search-hassel{height: 40px;width: 100%;font: 12px/40px "";border-bottom: 1px dashed #D4D4D4;}
+.search-hassel .search-hassel-tit{display:inline-block;margin-right: 30px;text-indent: 15px;}
+.search-hassel .search-selected{display:inline-block;height: 23px;border: 1px solid #D4D4D4;margin-top: 7px;color: #333;line-height: 22px;padding: 0 5px;cursor: pointer;}
+.search-hassel .search-selected em{color: #DD3F45;}
+.search-hassel .search-selected span{background: #DD3F45;color: #fff;padding: 0 4px;}
+
+/*产地和香型*/
+.search-cd{width: 100%;padding: 3px 0;border-bottom: 1px dashed rgb(212, 212, 212);font:12px/24px "";}
+.search-cd .search-cd-tit{display:inline-block;line-height: 26px;width: 87px;text-indent: 15px;vertical-align: middle;}
+.cd-table{display:inline-block;width: 1000px;line-height: 26px;overflow: hidden;vertical-align: middle;}
+.cd-table li{display:block;line-height: 26px;float: left;margin-right:15px;text-align: center;color: #848484;}
+
+/*更多选项*/
+.search-gdxx{width: 100%;height: 65px;}
+.search-gdxx .search-gdxx-tit{float:left;width: 96px;line-height: 65px;text-indent: 15px;}
+.search-gdxx .gdxx-table>li{float: left;width:98px;height: 28px;text-align: center;line-height: 30px;border: 1px solid #D4D4D4;
+    						border-right: none;margin-top: 18px;position: relative;cursor: pointer;}
+/*小二级菜单配合js实现效果的呈现*/
+.gdxx-table>li ul{position: absolute;left: -1px;top: 28px;width: 1100px;border: 1px solid #D4D4D4;background: #fff;display:none; }
+.gdxx-table>li ul li a{float: left;display: block;margin-right: 15px;padding: 0 10px;color: #848484;text-align: center;}
+.gdxx-table>li:nth-child(2) ul{left: -100px;}
+.gdxx-table>li:last-child{border-right: 1px solid #D4D4D4;}
+.gdxx-table>li:nth-child(3) ul{left: -199px;}
+
+/*阴影*/
+.imgline{height: 9px;margin: 0 auto;background: url("../img/goodslist/line.png");}
+
+/*整个商品列表部分，商品列表用json模拟并用ajax请求*/
+.listbox{width: 100%;height: auto;color:#333;font-size: 13px;padding-bottom: 30px;background:#F5F5F5;}
+.listbox-mian{width: 1180px;margin: 0 auto;}
+.listbox-sort{width: 1180px;height: 90px;line-height: 90px;}
+.listbox-sort span{display:inline-block;text-indent: 15px;vertical-align: middle;}
+.listbox-sort .sort-box{display:inline-block;vertical-align: middle;border: 1px solid #CCC;line-height: 28px;margin: 0 0 0 15px;}
+.sort-box a{display: inline-block;width: 84px;height: 28px;border-right: 1px solid #CCCCCC;float: left;text-align: center;color: #333;}
+.sort-box a:last-child{border-right: none;}
+
+/*json数据插入的部分*/
+.product-list{width: 1176px;border-right: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;margin: 0 auto;background: #fff;}
+/*插入的商品样式*/
+.cont{float: left;width: 292px;height: 423px;border-left: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;
+    	box-sizing: border-box;padding: 31px 0 0 31px;}
+.active{border-bottom: 3px solid #d9000e;}
+
+.cont a.qunimade{position: relative;display: block;width:230px,width:230px}
+.cont a.qunimade img{width:100%,width:100%}
+.cont a.qunimade .img1{position: absolute;left: 0;top: 0;}
+
+.cont p{height: 46px;margin-top: 15px;font:12px/23px "";overflow: hidden;}
+.cont .pretype{display: block;width: 240px;font: 12px/23px "";color: #DC3334;margin-top: 5px;}
+.cont .pretype em{display: inline-block;width:16px;height:18px;color:#fff;font: 12px/18px "";text-align: center;
+    			margin-right: 8px;background: url("../img/goodslist/pro-icon.png");}
+.price{display: block;float: left;width: 145px;margin-top: 10px;}
+.price em{color: #DC3334;font-size: 13px;}
+.price span{color: #DC3334;font-size: 25px;}
+
+.add{display:block;float: left;width: 80px;height: 30px;font: 12px/30px "";color: #fff;background: #E73736;margin-top: 10px;text-align: center;cursor: pointer;}
+.add:hover{background:#FF4500;}
+.cont p:last-child{width: 100px;height: 16px;display: block;color: #9B9B9B;font: 12px/16px"";margin-top: 45px;}
+
+.pagesssd{width: 1178px;height: 32px;margin: 20px auto 0;text-align: center;border: 1px solid #ccc;}
+
+
+/*大家都在买里面样式还是套用商品列表的*/
+.commendlist{width: 1180px;height: 60px;margin: 0 auto;line-height: 60px;}
+.commendlist span{display: inline-block;width:1180px;color:#A5A5A5;font-size:20px;text-indent:30px;}
+
+
+
+/*固定导航栏*/
+.fixedSch_box{display: none;width: 100%;height: 50px;background: #fff;border-top: 1px solid #C8C8C8;
+    position: fixed;top:0;box-shadow: 5px 5px 10px rgba(42, 42, 42, 0.29);z-index: 999;}
+.fixnavbox{width: 1200px;margin: 0 auto;}
+.fixnavbox a{
+    line-height: 50px;
+    color: #333333;
+    display: inline-block;
+    height: 50px;
+}
+.fixnavbox ul{
+    width: 860px;
+    display: inline-block;
+}
+.fixnavbox ul li{
+    padding: 0 25px;
+    line-height: 50px;
+    float: left;
+    font-size: 15px;
+}
+.fixnavbox ul li:first-child{
+    margin-left: 55px;
+}
+.fixnavbox a span{
+    padding: 0 10px;
+    line-height: 50px;
+    font-size: 15px;
+    /*display: inline-block;*/
+    vertical-align: top;
+}
+.fixnavbox a em{
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 13px;
+    display: inline-block;
+    background: #E73736;
+}
+
+

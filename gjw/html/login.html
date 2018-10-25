@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/login.css"/>
+</head>
+<body>
+<header>
+    <div class="margin">
+        <a href="index.html" class="logo">
+            <img src="../img/regist/logo.jpg">
+        </a>
+        <div class="header-r">
+            您好，欢迎光临购酒网！
+            <a href="#" style="color: #000">
+                <i class="icon-set"></i>&nbsp;&nbsp;帮助
+            </a>
+            <a href="#" style="color: #cf0404">
+                <i class="icon-service"></i>
+                在线客服
+            </a>
+        </div>
+    </div>
+</header>
+
+
+<main class="margin">
+        <div class="imgBox">
+            <a><img src="../img/login/login.jpg" /></a>
+        </div>
+        
+        <div class="loginBox">
+            <div class="login_form">
+                <div class="login_tit">
+                    <i class="man"></i>购酒网会员登录
+                </div>
+                <div class="text_box" id="Username"><!--js中用到的id名-->
+                    <i class="user"></i>
+                    <input type="text" placeholder="用户名" id="txtUserName"/>
+                </div>
+                <div class="text_box" id="Mima"><!--js中用到的id名-->
+                    <i class="pwd"></i>
+                    <input type="password" id="txtPassword"/>
+                </div>
+                <div class="autoLogin">
+                    <div class="f1">
+                        <input type="checkbox" value="1" id="autologin"/>记住密码
+                    </div>
+                    <a class="fr">忘记密码</a>
+                </div>
+                <input class="loginBtn" type="submit" value="登&nbsp;录"/><!--js中用到claa名-->
+            </div>
+            
+            <div class="dashedLine"></div>
+            <div class="other_login">使用合作账号登录<br>
+                <a class="qq"></a>
+                <a class="zhifubao"></a>
+                <a class="weixin"></a>
+            </div>
+            <a href="regist.html" class="resg">注册新账号</a>
+        </div>
+</main>
+
+<footer>
+    <div class="margin">
+        <div class="link">
+            <a href="#">关于我们</a><span>|</span>
+            <a href="#">联系我们</a><span>|</span>
+            <a href="#">友情链接</a><span>|</span>
+            <a href="#">隐私声明</a><span>|</span>
+            <a href="#">人才招聘</a>
+        </div>
+        <div>Copyright©2009-2018 gjw.com, All Rights Reserved 购酒网(上海)供应链管理有限公司 版权所有</div>
+    </div>
+</footer>
+
+
+<script src="../libs/jquery.js"></script>
+<script type="text/javascript" src="../libs/jquery.cookie.js"></script>
+<script src="../js/login.js"></script>
+</body>
+</html>

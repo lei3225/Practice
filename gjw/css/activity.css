@@ -1,0 +1,23 @@
+*{margin: 0;padding: 0;}
+.fr{float: right;}
+.f1, .fr{display: inline;}
+a{text-decoration: none;}
+li{list-style: none;}
+fieldset img{border: 0;}
+body{font-size: 12px;}
+.clearfix:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.vm, img, input, select, u{vertical-align: middle;}
+
+
+
+/*内容区图片*/
+#picture{box-sizing: border-box;}
+.tou{background:url(../img/activity/bg_01.jpg) no-repeat center;height:734px; }
+.bg2{background:url(../img/activity/bg_02.jpg) no-repeat center;height:623px; }
+.bg3{background:url(../img/activity/bg_03.jpg) no-repeat center;height:250px; }
+.bg4{background:url(../img/activity/bg_04.jpg) no-repeat center;height:526px; }
+
+
+/*左侧活动栏（a标签定位覆盖在原图型的文字上，不设颜色）*/
+.fixedSch_box{position: fixed;top: 40px;left:-45px;display:none;}
+.fixedSch_box a{display:block;width:80px;height:20px;position:fixed;left:0;top:620px;z-index: 99999999;}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/cart.css"/>
+</head>
+<body>
+<div class="topBar">
+    <div class="topBarCon w990">
+        <div class="topBarFl fl">
+            <a href="login.html" class="cd5">登录</a>
+            <a href="regist.html">注册</a>
+        </div>
+        <div class="miniMenu fr">
+            <ul>
+                <li class="m1">
+                    <a>购物车<strong id="totalNum">0</strong>件</a>
+                </li>
+                <li class="m2">
+                    <a>我的订单</a>
+                </li>
+                <li class="m3">
+                    <a>用户中心</a>
+                </li>
+                <li class="m4">
+                    <a>帮助</a>
+                </li>
+                <li class="m5">
+                    <a>提建议</a>
+                </li>
+                <li class="m6">
+                    <a>微博</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="global_body">
+	
+	<!--购物车列表-->
+    <div class="cart_title">
+        <h1 class="fl">我的购物车</h1>
+        <div class="fl">
+            <b>单笔订单满100元免运费（香港、澳门、台湾、钓鱼岛地区和拆分订单除外）</b>
+        </div>
+        <a class="fr cbtn check_btn"></a>
+    </div>
+    
+    <div class="divOrderInfo">
+        <dl class="cart_box">
+            <dt><!--购物车的表头-->
+                <span class="check_all">
+                    <input id="CheckAll" type="checkbox" checked/>全选
+                </span>
+                <span class="cb_r1">商品</span>
+                <span class="cb_r2">单价</span>
+                <span class="cb_r3">优惠</span>
+                <span class="cb_r4">数量</span>
+                <span class="cb_r5">小计</span>
+                <span class="cb_r6">操作</span>
+            </dt>
+            <dd id="cart_goods"><!--购物车的内容用ajax请求数据-->
+                <table id="tab">
+                    <tbody>
+                        <!--<tr>-->
+                            <!--<td><img src=""/>图片</td>-->
+                            <!--<td>名字</td>-->
+                            <!--<td>价格</td>-->
+                            <!--<td>0.00</td>-->
+                            <!--<td>1</td>-->
+                            <!--<td>总价</td>-->
+                            <!--<td><em data-index="">删除</em></td>-->
+                        <!--</tr>-->
+                    </tbody>
+                </table>
+            </dd>
+        </dl>
+        
+        <dl class="cart_info">
+            <dt class="yhq_2">
+                电子券在“去结算”页面中使用
+            </dt>
+            <dd class="clearfix">
+                <ul class="cart_sum">
+                    <li>
+                        <span class=" fl  btn_all">
+                            <input id="check_All" type="checkbox"/>全选
+                        </span>
+                        <span class="fl delepro">删除选中商品</span>
+                        <span class="fl cearpro">清空购物车</span>
+                        应付商品金额：
+                        <b id="TotalPrice">¥0.00</b>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        <div class="cart_btn">
+            <a class="fl cbtn gono_btn" href="goodslist.html"></a>
+            <span class="fl tip">商品价格和库存请以订单提交时为准</span>
+            <a class="fr cbtn check_btn"></a>
+        </div>
+    </div>
+    
+    
+    
+    <!--你可能还需要的商品列表-->
+    <dl class="trinket_box">
+        <dt>
+            <span>你可能还需要</span>
+        </dt>
+        
+        <dd class="clearfix">
+            <ul>
+                <li class="goods_pic">
+                    <a><img src="../img/goodslist/more1.jpg" width="100p" height="100"></a>
+                </li>
+                <li class="goods_name">
+                    <a>【组合装】53度 茅台飞天酒（2018年产）500ml 和53度 习酒 窖藏1998 500ml</a>
+                </li>
+                <li class="goods_price">¥1968</li>
+                <li class="goods_btn">
+                    <a class="fl cbtn putin_btn AddCart"></a>
+                </li>
+            </ul>
+            <ul>
+                <li class="goods_pic">
+                    <a><img src="../img/goodslist/more1.jpg" width="100p" height="100"></a>
+                </li>
+                <li class="goods_name">
+                    <a>【组合装】53度 茅台飞天酒（2018年产）500ml 和53度 习酒 窖藏1998 500ml</a>
+                </li>
+                <li class="goods_price">¥1968</li>
+                <li class="goods_btn">
+                    <a class="fl cbtn putin_btn AddCart"></a>
+                </li>
+            </ul>
+            <ul>
+                <li class="goods_pic">
+                    <a><img src="../img/goodslist/more1.jpg" width="100p" height="100"></a>
+                </li>
+                <li class="goods_name">
+                    <a>【组合装】53度 茅台飞天酒（2018年产）500ml 和53度 习酒 窖藏1998 500ml</a>
+                </li>
+                <li class="goods_price">¥1968</li>
+                <li class="goods_btn">
+                    <a class="fl cbtn putin_btn AddCart"></a>
+                </li>
+            </ul>
+            <ul>
+                <li class="goods_pic">
+                    <a><img src="../img/goodslist/more1.jpg" width="100p" height="100"></a>
+                </li>
+                <li class="goods_name">
+                    <a>【组合装】53度 茅台飞天酒（2018年产）500ml 和53度 习酒 窖藏1998 500ml</a>
+                </li>
+                <li class="goods_price">¥1968</li>
+                <li class="goods_btn">
+                    <a class="fl cbtn putin_btn AddCart"></a>
+                </li>
+            </ul>
+            <ul>
+                <li class="goods_pic">
+                    <a><img src="../img/goodslist/more1.jpg" width="100p" height="100"></a>
+                </li>
+                <li class="goods_name">
+                    <a>【组合装】53度 茅台飞天酒（2018年产）500ml 和53度 习酒 窖藏1998 500ml</a>
+                </li>
+                <li class="goods_price">¥1968</li>
+                <li class="goods_btn">
+                    <a class="fl cbtn putin_btn AddCart"></a>
+                </li>
+            </ul>
+            <ul>
+                <li class="goods_pic">
+                    <a><img src="../img/goodslist/more1.jpg" width="100p" height="100"></a>
+                </li>
+                <li class="goods_name">
+                    <a>【组合装】53度 茅台飞天酒（2018年产）500ml 和53度 习酒 窖藏1998 500ml</a>
+                </li>
+                <li class="goods_price">¥1968</li>
+                <li class="goods_btn">
+                    <a class="fl cbtn putin_btn AddCart"></a>
+                </li>
+            </ul>
+            <ul>
+                <li class="goods_pic">
+                    <a><img src="../img/goodslist/more1.jpg" width="100p" height="100"></a>
+                </li>
+                <li class="goods_name">
+                    <a>【组合装】53度 茅台飞天酒（2018年产）500ml 和53度 习酒 窖藏1998 500ml</a>
+                </li>
+                <li class="goods_price">¥1968</li>
+                <li class="goods_btn">
+                    <a class="fl cbtn putin_btn AddCart"></a>
+                </li>
+            </ul>
+            <ul>
+                <li class="goods_pic">
+                    <a><img src="../img/goodslist/more1.jpg" width="100p" height="100"></a>
+                </li>
+                <li class="goods_name">
+                    <a>【组合装】53度 茅台飞天酒（2018年产）500ml 和53度 习酒 窖藏1998 500ml</a>
+                </li>
+                <li class="goods_price">¥1968</li>
+                <li class="goods_btn">
+                    <a class="fl cbtn putin_btn AddCart"></a>
+                </li>
+            </ul>
+            <ul>
+                <li class="goods_pic">
+                    <a><img src="../img/goodslist/more1.jpg" width="100p" height="100"></a>
+                </li>
+                <li class="goods_name">
+                    <a>【组合装】53度 茅台飞天酒（2018年产）500ml 和53度 习酒 窖藏1998 500ml</a>
+                </li>
+                <li class="goods_price">¥1968</li>
+                <li class="goods_btn">
+                    <a class="fl cbtn putin_btn AddCart"></a>
+                </li>
+            </ul>
+            <ul>
+                <li class="goods_pic">
+                    <a><img src="../img/goodslist/more1.jpg" width="100p" height="100"></a>
+                </li>
+                <li class="goods_name">
+                    <a>【组合装】53度 茅台飞天酒（2018年产）500ml 和53度 习酒 窖藏1998 500ml</a>
+                </li>
+                <li class="goods_price">¥1968</li>
+                <li class="goods_btn">
+                    <a class="fl cbtn putin_btn AddCart"></a>
+                </li>
+            </ul>
+            <ul>
+                <li class="goods_pic">
+                    <a><img src="../img/goodslist/more1.jpg" width="100p" height="100"></a>
+                </li>
+                <li class="goods_name">
+                    <a>【组合装】53度 茅台飞天酒（2018年产）500ml 和53度 习酒 窖藏1998 500ml</a>
+                </li>
+                <li class="goods_price">¥1968</li>
+                <li class="goods_btn">
+                    <a class="fl cbtn putin_btn AddCart"></a>
+                </li>
+            </ul>
+            <ul>
+                <li class="goods_pic">
+                    <a><img src="../img/goodslist/more1.jpg" width="100p" height="100"></a>
+                </li>
+                <li class="goods_name">
+                    <a>【组合装】53度 茅台飞天酒（2018年产）500ml 和53度 习酒 窖藏1998 500ml</a>
+                </li>
+                <li class="goods_price">¥1968</li>
+                <li class="goods_btn">
+                    <a class="fl cbtn putin_btn AddCart"></a>
+                </li>
+            </ul>
+        </dd>
+    </dl>
+    
+</div>
+
+
+
+
+
+<div class="foot">
+    <img src="../img/goodslist/sanBao_07.gif">
+    <div class="links">
+        <a>关于我们</a><span>|</span>
+        <a>联系我们</a><span>|</span>
+        <a>友情链接</a><span>|</span>
+        <a>隐私声明</a><span>|</span>
+    </div>
+</div>
+
+<div class="copyright">
+    <p>Copyright® 2009-2018 gjw.com, All Rights Reserved 购酒网(上海)供应链管理有限公司 版权所有</p>
+</div>
+<div class="authentication">
+    <a class="beian"></a>
+    <a class="depart"></a>
+</div>
+
+</body>
+<script src="../libs/jquery.js"></script>
+<script src="../libs/jquery.cookie.js"></script>
+<script src="../js/cart.js"></script>
+</html>

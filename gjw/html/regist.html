@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/regist.css"/>
+</head>
+<body>
+<header>
+    <div class="margin">
+        <a href="index.html" class="logo">
+            <img src="../img/regist/logo.jpg">
+        </a>
+        <div class="header-r">如您已有账户
+        	<a href="login.html">&nbsp;&nbsp;请登录</a>
+            <a href="#" style="color: #000">
+                <i class="icon-set"></i>&nbsp;&nbsp;帮助
+            </a>
+            <a href="#" style="color: #cf0404">
+                <i class="icon-service"></i>在线客服
+            </a>
+        </div>
+    </div>
+</header>
+
+
+<main>
+    <div class="margin">
+        <div class="regist_box">
+        	
+            <div class="info_box"><!--左侧部分-->
+                <ul class="tab_head">
+                    <li class="tab_active">
+                        <a href="#">
+                            <i class="mobileIcon icon"></i>手机注册
+                        </a>
+                        <div class="active"></div><!--下框红色部分-->
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="telIcon icon"></i>邮箱注册
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="form_box">
+                    <div class="telCont"><!--手机注册部分-->
+                        <div class="text_box">
+                            <i>用户名：</i>
+                            <input type="text" id="user"/>
+                        </div>
+                        <br>
+                        <div class="text_box">
+                            <i>设置密码：</i>
+                            <input type="password" id="password" placeholder="6-20个非空格字符"/>
+                        </div>
+                        <br>
+                        <div class="text_box">
+                            <i>确认密码：</i>
+                            <input type="text" id="repass"/>
+                        </div>
+                        <br>
+                        <div class="code_box">
+                            <div class="txt">
+                                <i>验证码：</i>
+                                <input type="text" id="code" placeholder="请输入验证码"/>
+                            </div>
+                            <div class="code">1234</div>
+                            <span class="next">下一张</span><!--js中用到class名-->
+                        </div>
+                        <br>
+                        <p>点击注册，表示您同意购酒网<a href="#">《服务协议》</a></p>
+                        <a class="reg">注册</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="img_box">
+                <a href="#"><img src="../img/regist/regist.jpg"></a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="margin">
+        <div class="link">
+            <a href="#">关于我们</a><span>|</span>
+            <a href="#">联系我们</a><span>|</span>
+            <a href="#">友情链接</a><span>|</span>
+            <a href="#">隐私声明</a><span>|</span>
+            <a href="#">人才招聘</a>
+        </div>
+        <div>Copyright©2009-2018 gjw.com, All Rights Reserved 购酒网(上海)供应链管理有限公司 版权所有</div>
+    </div>
+</footer>
+
+</body>
+<script src="../libs/jquery.js"></script>
+<script type="text/javascript" src="../libs/jquery.cookie.js"></script>
+<script src="../js/regist.js"></script>
+</html>
