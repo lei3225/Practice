@@ -1,0 +1,26 @@
+/*侧边栏*/
+#sideBar{position: fixed;width: 100px;padding: 5px;box-sizing: border-box;background: #fff;right: 0;z-index: 2;top: 50%;transform: translateY(-50%);box-shadow: 0 0 4px rgba(0,0,0,.14);}
+#sideBar .side-bar-item{width: 90px;height: 60px;position: relative;border-bottom: 1px solid #efefef;padding-top: 10px;cursor: pointer;text-align: center;}
+#sideBar .side-bar-item:last-child{border-bottom: none;}
+#sideBar .side-bar-icon{width: 100%;display: block;}
+#sideBar .side-bar-icon img{display: inline-block;}
+.cart{position: relative;}
+.cart i{position: absolute;width: 20px;height: 20px;border-radius: 10px;right: 20px;top: 5px;background: #f00;color: #fff;}
+#sideBar .side-bar-hover{display: none;}
+#sideBar .side-bar-hover img{display: inline-block;}
+#sideBar .side-bar-title{width: 100%;text-align: center;margin-top: 4px;}
+#sideBar .side-bar-item:hover .side-bar-title{color: #ea4141;}
+#sideBar .side-bar-item:hover .side-bar-qacode{display: block;}
+/*扫码下载APP*/
+#sideBar .side-bar-qacode{width: 225px;height: 278px;position: absolute;left: -250px;background: #fff;top: -90px;box-shadow: 0 0 4px rgba(0,0,0,.14);display: none;}
+#sideBar .side-bar-qacode:before{content: '';position: absolute;background: #fff;width: 18px;height: 18px;right: -9px;top: 120px;transform: rotate(45deg);box-shadow: 0 0 4px rgba(0,0,0,.14);}
+#sideBar .side-bar-qacode:after{content: '';position: absolute;background: #fff;width: 26px;height: 26px;right: 0;top: 116px;}
+#sideBar .side-bar-qacode .side-bar-bounus{position: relative;color: #ea4141;width: 187px;height: 63px;overflow: hidden;margin: 0 auto;}
+#sideBar .side-bar-qacode .side-bar-bounus .side-unit{font-size: 24px;font-weight: 700;}
+#sideBar .side-bar-qacode .side-bar-bounus .side-money{font-size: 44px;font-weight: 700;margin-left: -10px;}
+#sideBar .side-bar-qacode .side-bar-bounus .side-desc{display: inline-block;height: 100%;}
+#sideBar .side-bar-qacode .side-bar-bounus .side-desc1{font-size: 12px;}
+#sideBar .side-bar-qacode .side-bar-bounus .side-desc2{font-size: 14px;font-weight: 700;}
+#sideBar .side-bar-qacode .side-qrcode{width: 172px;height: 172px;position: relative;margin: 0 auto;overflow: hidden;}
+#sideBar .side-bar-qacode .side-qrcode img{width: 100%;height: 100%;display: block;}
+#sideBar .side-bar-qacode .side-bar-qr-title {font-size: 18px;width: 100%;text-align: center;font-weight: 700;margin-top: 7px;}

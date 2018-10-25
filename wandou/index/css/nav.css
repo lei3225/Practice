@@ -1,0 +1,52 @@
+/*导航*/
+#mainNav{position: relative;box-shadow: 0 4px 4px rgba(0,0,0,.14);width: 100%;height: 38px;z-index: 2;background: #fff;font: 14px/38px "";color: #191919;}
+#mainNav a{color: #191919;}
+#mainNav .mainNav {position: relative;}
+
+
+/*全部商品分类*/
+.mainNav .main-cats{float: left;}
+
+.mainNav .main-cats .main-cats-labels{height: 38px;width: 258px;color: #fff;background: #191919;text-align: center;}
+.mainNav .fixed-logo{display: none;float: left;}
+.mainNav .fixed-logo img{height: 35px;margin-top: 1px;margin-right: 20px;display: block;}
+.mainNav .main-cats #mainCatsNav{width: 258px;height: 500px;background: #fff;position: absolute;}
+.mainNav .main-cats #mainCatsNav>li{width: 258px;height: 62px;font: 14px/20px "";}
+.mainNav .main-cats #mainCatsNav>li:hover{background: #fff4f4;}
+.mainNav .main-cats #mainCatsNav li .mainCats-txt{padding: 9px 15px;line-height: 20px;}
+.mainNav .main-cats #mainCatsNav li .mainCats-txt span{font-weight: 700;}
+.mainNav .main-cats #mainCatsNav li .mainCats-txt p{margin-top: 4px;}
+.mainNav .main-cats #mainCatsNav li .mainCats-txt p a{display: inline-block;padding: 0 6px;font: 14px/14px "";color: #191919;border-right: 1px solid #ccc;cursor: pointer;}
+.mainNav .main-cats #mainCatsNav li .mainCats-txt p a:hover{color: #ea4141;}
+.mainNav .main-cats #mainCatsNav li .mainCats-txt p a:last-child{border-right: none;}
+
+/*二级菜单*/
+.mainNav .main-cats #mainCatsNav li .second-menu{position: absolute;display: none;width: 1000px;left: 258px;top: 0;background: #fff;z-index: 1;min-height: 500px;}
+.mainNav .main-cats #mainCatsNav li:hover .second-menu{display: block;}
+#mainNav .second-menu>ul{float: left;width: 650px;background: #fff;border: 1px solid #efefef;}
+#mainNav .second-menu>ul>li{float: left;margin-right: 20px;padding: 10px 5px;}
+#mainNav .second-menu>ul>li span{margin-left: 7px;font-weight: 700;}
+#mainNav .second-menu>ul>li p{width: 295px;height: 120px;margin-top: 4px;padding-bottom: 14px;border-bottom: 1px solid #efefef;}
+#mainNav .second-menu>ul>li p a{display: inline-block;margin: 5px 7px;font-size: 14px;line-height: 20px;cursor: pointer;}
+#mainNav .second-menu>ul>li p a:hover{color: #ea4141;}
+.cat-hot{float: right;width: 347px;height: 500px;margin: 0 0 10px 0;padding-left: 30px;border: 1px solid #efefef;border-left: 0;position: relative;left: 0;background: #fff;overflow-x: hidden;overflow-y: auto;box-sizing: border-box;padding-top: 10px;}
+.cat-hot p{font-weight: 700;}
+.cat-hot .cat-hot-list li{margin-top: 20px;}
+.cat-hot-list li .cat-hot-logo{float: left;width: 48px;height: 48px;border: 1px solid #efefef;}
+.cat-hot-list li .cat-hot-logo img{width: 100%;height: 100%;}
+.cat-hot-list li .cat-hot-info{float: left;margin-left: 10px;padding: 5px 0;font: 14px/20px "";}
+.cat-hot-list li .cat-hot-info .cat-hot-desc{color: #9e9e9e;}
+.cat-hot-list li .cat-hot-cnt{float: right;margin-top: 5px;color: #9e9e9e;}
+.cat-hot-list li .cat-hot-cnt span{color: #EA4141;}
+/*导航*/
+.mainNav #mainTabs{float: left;height: 38px;}
+.mainNav #mainTabs li{float: left;padding: 0 25px;}
+.mainNav #mainTabs li a{color: #191919;padding: 4px 2px;font-weight: 700;cursor: pointer;}
+.mainNav #mainTabs li a.te{color: #EA4141;border-bottom: 2px solid #EA4141;}
+.mainNav #mainTabs li:hover a{color: #EA4141;border-bottom: 2px solid #EA4141;}
+/*吸顶搜索*/
+.mainNav .fixed-search{float: right;display: none;height: 38px;}
+.fixed-search .search-form {position: relative;margin-right: 30px;width: 190px;height: 100%;display: block;}
+.fixed-search input {position: absolute;width: 160px;height: 25px;top: 50%;margin-top: -12.5px;left: 0;font-size: 14px;color: #191919;border: none;border-bottom: 1px solid #191919;}
+[type=search] {-webkit-appearance: textfield;outline-offset: -2px;}
+.fixed-search button {position: absolute;width: 24px;height: 24px;top: 50%;margin-top: -12px;right: 0;background: url(https://s.wandougongzhu.cn/s/75/s_cea703.png) no-repeat;background-size: contain;border: none;cursor: pointer;}

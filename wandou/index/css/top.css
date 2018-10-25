@@ -1,0 +1,22 @@
+/*顶部*/
+#topNav{width: 100%;height: 36px;font: 12px/36px "";color: #fff;background: #191919;}
+#topNav .topNav-left{float: left;position: absolute;}
+#topNav .topNav-left .topNav-left-text{padding-left: 19px;background: url(https://s.wandougongzhu.cn/s/af/icon_phone_70d313.png) no-repeat 0 center;background-size: 11px 17px;cursor: pointer;}
+#topNav .topNav-left .topNav-qrcode{display: none;width: 160px;height: 160px;position: absolute;left: 0;border: 1px solid #efefef;text-align: center;background: #fff;z-index: 1;overflow: hidden;}
+#topNav .topNav-left .topNav-qrcode .qrcode-angle{width: 0;height: 0;border: 8px solid transparent;border-bottom-color: #fff;position: absolute;top: -16px;left: 50%;margin-left: -8px;}
+#topNav .topNav-left .topNav-qrcode img{width: 150px;height: 150px;margin-top: 5px;border-style: none;}
+#topNav .topNav-left:hover .topNav-qrcode{display: block;}
+#topNav .topNav-right{float: right;}
+#topNav .topNav-right a{color: #fff;}
+#topNav .topNav-right .top-nav-auth{display: inline-block;padding: 0 10px;}
+.top-nav-auth em{margin-right: 5px;}
+#topNav .topNav-right i{position: relative;display: inline-block;width: 1px;height: 14px;top: 3px;background: #ccc;}
+#topNav .topNav-right .top-nav-show{display: inline-block;padding: 0 10px;}
+.head{height: 160px;padding: 46px 0 50px 0;box-sizing: border-box;background: #fff;}
+.head .logo{float: left;width: 170px;height: 54px;left: 0;background: url(https://s5.wandougongzhu.cn/s/42/logo_b3fe22.png) no-repeat;background-size: contain;}
+.head .search-box{display: inline-block;margin-left: 235px;}
+.head .search-box .search-form{border: 2px solid #191919;box-sizing: border-box;width: 510px;height: 36px;}
+.head .search-box .search-form input{width: 440px;height: 30px;font: 14px/22px "";padding: 4px 10px;border: none;overflow: visible;}
+input::-webkit-search-cancel-button{display: none;}
+.head .search-box .search-form button{position: absolute;width: 66px;height: 34px;background: #191919 url(https://s1.wandougongzhu.cn/s/f5/search_8922ed.png) no-repeat center;background-size: 21px;border: none;cursor: pointer;}
+

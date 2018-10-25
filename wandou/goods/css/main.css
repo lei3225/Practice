@@ -1,0 +1,14 @@
+@import url(../../libs/public.css);
+@import url(../../index/css/top.css);
+@import url(../../index/css/nav.css);
+@import url(../../index/css/sideBar.css);
+@import url(../../index/css/footer.css);
+@import url(goods.css);
+
+
+.margin{width: 1200px;margin: 0 auto;padding: 0;}
+
+.mainNav .main-cats #mainCatsNav{display: none;}
+.mainNav .main-cats:hover #mainCatsNav{display: block;}
+main{background: #f5f5f5;overflow: hidden;color: #191919;}
+main a{color: #191919;}
